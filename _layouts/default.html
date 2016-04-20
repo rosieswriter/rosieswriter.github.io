@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title }} - {{ site.title }} {% endif %}</title>
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/colorbox.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/js/bxslider.min.js"></script>
+    <script src="/assets/js/colorbox.min.js"></script>
+    <script src="/assets/js/base.js"></script>
+</head>
+
+<body{% if page.class %} class="{{ page.class }}"{% endif %}>
+
+<div id="header">
+    <div class="site-title">
+        <a title="Rosie Sultan" href="/">Rosie Sultan</a>
+    </div>
+    <div class="site-navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/books/">Books</a></li>
+            <li><a href="/events-media/">Events &amp; Media</a></li>
+            <li><a href="/book-clubs/">Book Clubs</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+    <div class="entry-wrapper">
+        {% if page.class == "simple-page" %}
+            <h1 class="entry-title">
+                {{ page.title }}
+            </h1>
+        {% elsif page.class == "book-page" %}
+
+        {% else %}
+            <h1 class="hidden-title">
+                {{ page.title }}
+            </h1>
+        {% endif %}
+        <div class="entry-content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="site-mail">
+        <form action="http://rosie-sultan.us7.list-manage.com/subscribe/post?u=934f8de1ccd505e4e699475af&amp;id=59291324a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div>
+                <label for="mce-EMAIL">Join our mailing list:</label>
+                <input type="email" value="your@email.com" name="EMAIL" class="email" id="mce-EMAIL">
+                <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+        </form>
+    </div>
+    <ul class="site-info">
+        <li>&copy; {{ site.time | date: '%Y' }} Rosie Sultan</li>
+        <li class="f"><a href="//facebook.com/rosiesultanpersonal">Facebook</a></li>
+        <li class="t"><a href="//twitter.com/rosiesultan1">Twitter</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
