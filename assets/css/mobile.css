@@ -26,6 +26,7 @@
     }
     .tinynav {
         display: inline-block;
+        font-size: .875em;
     }
     .site-navbar ul {
         display: none;
