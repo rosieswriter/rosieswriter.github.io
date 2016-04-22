@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>{% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title }} - {{ site.title }} {% endif %}</title>
-    <!-- <meta name="viewport" content="width=1024"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
     <link rel="stylesheet" href="/assets/css/colorbox.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/js/tinynav.min.js"></script>
     <script src="/assets/js/bxslider.min.js"></script>
     <script src="/assets/js/colorbox.min.js"></script>
     <script src="/assets/js/base.js"></script>
@@ -16,7 +18,7 @@
 
 <body{% if page.class %} class="{{ page.class }}"{% endif %}>
 
-<div id="header">
+<div class="site-header">
     <div class="site-title">
         <a title="Rosie Sultan" href="/">Rosie Sultan</a>
     </div>
@@ -32,7 +34,7 @@
     </div>
 </div>
 
-<div id="content">
+<div class="site-content">
     <div class="entry-wrapper">
         {% if page.class == "simple-page" %}
             <h1 class="entry-title">
@@ -51,7 +53,7 @@
     </div>
 </div>
 
-<div id="footer">
+<div class="site-footer">
     <div class="site-mail">
         <form action="http://rosie-sultan.us7.list-manage.com/subscribe/post?u=934f8de1ccd505e4e699475af&amp;id=59291324a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div>

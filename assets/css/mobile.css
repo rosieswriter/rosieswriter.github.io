@@ -1,0 +1,126 @@
+/* MOBILE | 2016-04 */
+
+@media screen {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+    .tinynav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+        background: #f8f7f2 none;
+        padding: 10px;
+    }
+    body,
+    .site-content,
+    .simple-page .entry-wrapper,
+    .site-footer {
+        width: auto;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: transparent;
+    }
+    .tinynav {
+        display: inline-block;
+    }
+    .site-navbar ul {
+        display: none;
+    }
+    .site-header {
+        margin-bottom: 30px;
+    }
+    .site-navbar {
+        background: transparent none;
+        border-bottom: 1px solid #cfcab9;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .site-title {
+        font-size: 1.625em;
+        letter-spacing: .125em;
+    }
+    .entry-title {
+        text-transform: capitalize;
+        letter-spacing: 0;
+    }
+    .entry-content {
+        min-height: 0;
+    }
+    .site-footer {
+        border-top: 1px solid #cfcab9;
+        margin: 1.5em 0 1em;
+        padding-top: 1em;
+    }
+    .site-mail label,
+    .site-info li:first-child {
+        display: block;
+        margin-bottom: .5em;
+    }
+    .home-page .entry-content {
+        border: 0;
+        display: table;
+        width: 100%;
+    }
+    .home-page .reviews,
+    .home-page .books {
+        float: none;
+        width: auto;
+        padding: 0;
+        text-align: center;
+    }
+    .home-page .books {
+        display: table-caption;
+        border-bottom: 1px solid #cfcab9;
+        margin-bottom: 30px;
+    }
+    .home-page .bx-wrapper img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .home-page .bx-controls {
+        display: none;
+    }
+    .books-page .books li {
+        text-align: center;
+        display: table;
+        width: 100%;
+    }
+    .books-page .books li .aside {
+        display: table-caption;
+    }
+    .books-page .books li:last-child {
+        border: 0;
+    }
+    .books-page .entry-wrapper .main {
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+    .book-page .entry-wrapper {
+        border: 0;
+    }
+    .book-page .entry-content {
+        display: table;
+        width: 100%;
+        text-align: center;
+    }
+    .book-page .entry-content .column-main {
+        float: none;
+        width: auto;
+    }
+    .book-page .entry-content .column-aside {
+        display: table-caption;
+        border-bottom: 1px solid #cfcab9;
+        margin-bottom: 30px;
+    }
+    .book-page .entry-content .column-aside li {
+        list-style: none;
+        margin: 0;
+    }
+}

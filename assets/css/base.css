@@ -91,22 +91,22 @@ hr {
 /* LAYOUT
 ---------------------------------------- */
 
-#header {
+.site-header {
     margin: 0 0 3em;
 }
 
-#content {
+.site-content {
     padding: 0 2.5em;
 }
 
-#footer {
+.site-footer {
     padding: 2.5em 2.5em 2em;
     text-align: center;
 }
 
-#header:after,
-#content:after,
-#footer:after {
+.site-header:after,
+.site-content:after,
+.site-footer:after {
     content: "";
     display: table;
     clear: both;

@@ -6,6 +6,10 @@ $(document).ready(function() {
         return this.href == url;
     }).addClass("active");
 
+    $(".site-navbar ul").tinyNav({
+        header: "Navigation"
+    });
+
     $("#home-books").bxSlider({
         pager: false,
         auto: true
