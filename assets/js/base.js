@@ -6,8 +6,9 @@ $(document).ready(function() {
         return this.href == url;
     }).addClass("active");
 
-    $(".site-navbar ul").tinyNav({
-        header: "Navigation"
+    $('.site-hamburger span').click(function() {
+        $(this).toggleClass('active');
+        $('.site-navbar').slideToggle('fast');
     });
 
     $("#home-books").bxSlider({

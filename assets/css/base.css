@@ -168,6 +168,10 @@ hr {
     color: #222;
 }
 
+.site-hamburger {
+    display: none;
+}
+
 /* FOOTER
 ---------------------------------------- */
 

@@ -24,25 +24,42 @@
         border: 0;
         background: transparent;
     }
-    .tinynav {
-        display: inline-block;
-        font-size: .875em;
-    }
-    .site-navbar ul {
-        display: none;
-    }
     .site-header {
-        margin-bottom: 30px;
-    }
-    .site-navbar {
-        background: transparent none;
-        border-bottom: 1px solid #cfcab9;
-        padding-bottom: 20px;
-        text-align: center;
+        margin-bottom: 20px;
     }
     .site-title {
         font-size: 1.625em;
         letter-spacing: .125em;
+        border-bottom: 1px solid #cfcab9;
+        margin-bottom: 20px;
+    }
+    .site-hamburger {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        font-size: .85em;
+    }
+    .site-hamburger span {
+        display: inline-block;
+        border: 1px solid #cfcab9;
+        border-radius: 3px;
+        padding: 6px 20px 4px;
+    }
+    .site-navbar {
+        background: transparent none;
+        padding: 10px 0;
+        text-align: center;
+        display: none;
+    }
+    .site-navbar li {
+        background: transparent none;
+        display: block;
+        font-size: inherit;
+    }
+    .site-navbar li a {
+        display: block;
+        padding: 8px 0;
     }
     .entry-title {
         text-transform: capitalize;
